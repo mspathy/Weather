@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+  <link rel="stylesheet" href="css/weather.css">
+</head>
+
+<body class="text-center">
+  <div class="container-fluid all">
+    <div class="jumbotron">
+      <h1 class="text-center">Weather Forecast Application</h1>
+    </div>
+    <div class="row well">
+      <div class="col-md-12 " id="city">
+        <h2 class="text-center">Data For Chennai,India</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 " id="weather">
+          <img src="" id="weatherImg" class="center-block">
+          <h3 class="text-center data-item" id="weather-text"></h3>
+        </div>
+        <div class="col-md-4 " id="temp">
+		<table align="center">
+		<tr>
+			<th class="text-center"><h4>Date</h4></th>
+                        <th class="text-center"><h4>Weather</h4></th>
+			<th class="text-center"><h4>Temperature</h4></th>
+		</tr>
+		<tr>
+			<td class="text-center data-item" id="temp-textday0"></td>
+			<td class="text-center data-item" id="prediction0"></td>
+			<td class="text-center data-item" id="temp-textdate0"></td>
+		</tr>
+		<tr>
+			<td class="text-center data-item" id="temp-textday1"></td>
+			<td class="text-center data-item" id="prediction1"></td>
+			<td class="text-center data-item" id="temp-textdate1"></td>
+		</tr>
+		<tr>
+			<td class="text-center data-item" id="temp-textday2"></td>
+			<td class="text-center data-item" id="prediction2"></td>
+			<td class="text-center data-item" id="temp-textdate2"></td>
+		</tr>
+		<tr>
+			<td class="text-center data-item" id="temp-textday3"></td>
+			<td class="text-center data-item" id="prediction3"></td>
+			<td class="text-center data-item" id="temp-textdate3"></td>
+		</tr>
+		<tr>
+			<td class="text-center data-item" id="temp-textday4"></td>
+			<td class="text-center data-item" id="prediction4"></td>
+			<td class="text-center data-item" id="temp-textdate4"></td>
+		</tr>
+		</table>
+          <div class="checkbox text-center">
+            <label><input type="checkbox" id="tempMode" value="2">
+          C&deg
+        </label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="container">
+        <p class="copyright">Copyright Wipro 2017. All Rights Reserved. Made with <a href="http://www.openweathermap.org">openweathermap</a>.</p>
+      </div>
+    </div>
+  </div>
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js'></script>
+  <script src="js/weather.js"></script>
+</body>
+
+</html>
